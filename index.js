@@ -1,4 +1,4 @@
-var submitBtn = document.getElementById("submitBtn");
+// var submitBtn = document.getElementById("submitBtn");
 
 function submitClick(){
 	var firebaseRef = firebase.database();
@@ -45,8 +45,8 @@ function submitClick(){
 	// });
 
 	// window.alert(inputNickname);
-	
-
+	// window.alert("asd");
+	// return true;
 }
 
 // function writeUserData(userId, name, email, imageUrl) {

@@ -1,0 +1,58 @@
+body{
+    background-image: url("1.png");
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 360px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container h1{
+    margin-top: 100px;
+    margin-bottom: 250px;
+    color: white;
+    font-size: 60px;
+}
+
+.nickbox{
+    width: 85%;
+    height: 60px;
+    background: ghostwhite;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.nickbox input{
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 90%;
+    line-height: 56px;
+    font-size: 23px;
+}
+
+.container #btn{
+    width: 70%;
+    height: 60px;
+    background: grey;
+    border-radius: 8px;
+    margin: 14px auto;
+    display: block;
+    font-size: 23px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
