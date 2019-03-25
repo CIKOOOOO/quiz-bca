@@ -8,7 +8,7 @@ function submitClick(){
 	checkNick.once("value")
 	.then(function(snapshot){
 		if(snapshot.hasChild(inputNickname)){
-			window.location.href = "mainquiz1.html"
+			// window.location.href = "main_quiz1.php"
 		}
 		else{
 			firebaseRef.ref('users/'+inputNickname).set({
@@ -22,11 +22,12 @@ function submitClick(){
 			quiz8 : ''
 			},function(error){
 				if(error){
-					window.alert("Error");
+					// window.alert("Error");
 				}
 				else{
-					window.alert("Success");
-					window.location.href = "mainquiz1.html"
+					// window.alert("Success");
+					// window.location.href = "main_quiz1.php";
+					
 				}
 			});
 		}
