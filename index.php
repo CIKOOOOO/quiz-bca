@@ -31,13 +31,13 @@
 	<div class="container">
 		<h1>Quiz Bca</h1>
 
-		<form action="" method="POST" onsubmit="return submitClick();">
+		<form action="mainquiz1.php" method="POST" onsubmit="return submitClick();">
 			
 			<div class="nickbox">
-				<input type="text" id="inputNickname" placeholder="masukan nickname" require> <br>
+				<input type="text" id="inputNickname" placeholder="Masukan Nickname" require> <br>
 			</div>
 			
-			<input id="btn" type="submit" value="submit">
+			<input id="btn" type="submit" value="Submit">
 		
 		</form>
 	</div>
