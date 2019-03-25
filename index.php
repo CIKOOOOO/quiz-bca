@@ -31,7 +31,7 @@
 	<div class="container">
 		<h1>Quiz Bca</h1>
 
-		<form action="/action_page.php" method="POST" onsubmit="return submitClick();">
+		<form action="" method="POST" onsubmit="return submitClick();">
 			
 			<div class="nickbox">
 				<input type="text" id="inputNickname" placeholder="masukan nickname" require> <br>
