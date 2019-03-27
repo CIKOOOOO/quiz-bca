@@ -48,7 +48,7 @@
 		<div class="container2">
 			<progress value="0" max="15" id="progressBar"></progress>
 			<div class="box">
-				<img src="bca.png" width="100px" height="100px" alt="qimg">
+				<img src="/res/bca.png" width="100px" height="100px" alt="qimg">
 				<div class="question">Siapa presiden pertama Indonesia?</div> 
 	
 				<div class="ansrow-1">
@@ -62,7 +62,7 @@
 			</div>
 	
 			<div class="box">
-					<img src="wheel1.png" width="100px" height="100px" alt="qimg">
+					<img src="/res/wheel1.png" width="100px" height="100px" alt="qimg">
 					<div class="question">Apa Singkatan BCA?</div> 
 		
 					<div class="ansrow-1">
