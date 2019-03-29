@@ -8,7 +8,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>. -->
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 		<script>
 		  // Initialize Firebase
@@ -26,6 +26,14 @@
 	<script src="index.js"></script>
 </head>
 <body id="body">
+	<div id="gone">
+		<input type="text" id="quest1">
+		<input type="text" id="quest2">
+		<input type="text" id="quest3">
+		<input type="text" id="quest4">
+		<input type="text" id="quest5">
+	</div>
+	
 	<!-- screen1 -->
 	<div id="bodycontainer1">
 		<div class="container1">
@@ -46,14 +54,14 @@
 	<!-- screen 2 -->
 	<div id="bodycontainer2">
 		<div class="container2">
-			<progress value="0" max="15" id="progressBar"></progress>
+			<progress value="0" max="25" id="progressBar"></progress>
 			<div class="box">
-				<img src="/res/bca.png" width="100px" height="100px" alt="qimg">
+				<img src="res/bca.png" width="100px" height="100px" alt="qimg">
 				<div class="question">Siapa presiden pertama Indonesia?</div> 
 	
 				<div class="ansrow-1">
 					 <input id="ans-1" type="radio" name="question1" value="a">  Ir. Raditya Dika <br>
-					 <input id="ans-2" type="radio" name="question1" value="b">  Ir. Soekarno
+					 <input id="ans-2" type="radio" name="question1" value="b" onclick="clicked1()">  Ir. Soekarno
 				</div>
 				<div class="ansrow-2">
 					 <input id="ans-3" type="radio" name="question1" value="c">  Bpk Soeharto <br>
@@ -62,7 +70,7 @@
 			</div>
 	
 			<div class="box">
-					<img src="/res/wheel1.png" width="100px" height="100px" alt="qimg">
+					<img src="res/wheel1.png" width="100px" height="100px" alt="qimg">
 					<div class="question">Apa Singkatan BCA?</div> 
 		
 					<div class="ansrow-1">
@@ -70,50 +78,50 @@
 						<input id="ans-6" type="radio" name="question2" value="b">Bunga Cinta Aestari
 				   </div>
 				   <div class="ansrow-2">
-						<input id="ans-7" type="radio" name="question2" value="c">Bank Central Asia<br>
+						<input id="ans-7" type="radio" name="question2" value="c" onclick="clicked2()">Bank Central Asia<br>
 						<input id="ans-8" type="radio" name="question2" value="d">Bank Central Asian
 				   </div>
 				</div>
 
 				<div class="box">
-					<img src="/res/wheel1.png" width="100px" height="100px" alt="qimg">
-					<div class="question">Tahun berapa BCA didirikan?</div> 
+					<img src="res/wheel1.png" width="100px" height="100px" alt="qimg">
+					<div class="question">Apa Bentuk Logo BCA?</div> 
 		
 					<div class="ansrow-1">
-						<input id="ans-9" type="radio" name="question3" value="a">1945<br>
-						<input id="ans-10" type="radio" name="question3" value="b">1957
+						<input id="ans-9" type="radio" name="question3" value="a">Jengkol<br>
+						<input id="ans-10" type="radio" name="question3" value="b" onclick="clicked3()">Kembang
 				   </div>
 				   <div class="ansrow-2">
-						<input id="ans-11" type="radio" name="question3" value="c">1972<br>
-						<input id="ans-12" type="radio" name="question3" value="d">1998
+						<input id="ans-11" type="radio" name="question3" value="c">Gandum<br>
+						<input id="ans-12" type="radio" name="question3" value="d">Mobil
 				   </div>
 				</div>
 
 				<div class="box">
-					<img src="/res/wheel1.png" width="100px" height="100px" alt="qimg">
-					<div class="question">Tahun berapa Gojek didirikan?</div> 
+					<img src="res/wheel1.png" width="100px" height="100px" alt="qimg">
+					<div class="question">Warna logo Go-Jek</div> 
 		
 					<div class="ansrow-1">
-						<input id="ans-13" type="radio" name="question4" value="a">2015<br>
-						<input id="ans-14" type="radio" name="question4" value="b">2016
+						<input id="ans-13" type="radio" name="question4" value="a" onclick="clicked4()">Hijau<br>
+						<input id="ans-14" type="radio" name="question4" value="b">Ungu
 				   </div>
 				   <div class="ansrow-2">
-						<input id="ans-15" type="radio" name="question4" value="c">2011<br>
-						<input id="ans-16" type="radio" name="question4" value="d">2010
+						<input id="ans-15" type="radio" name="question4" value="c">Kelabu<br>
+						<input id="ans-16" type="radio" name="question4" value="d">Tidak berwarna
 				   </div>
 				</div>
 
 				<div class="box">
-					<img src="/res/wheel1.png" width="100px" height="100px" alt="qimg">
-					<div class="question">Siapa yang menciptakan lagu Indonesia Raya?</div> 
+					<img src="res/wheel1.png" width="100px" height="100px" alt="qimg">
+					<div class="question">Kapan Indonesia merdeka?</div> 
 		
 					<div class="ansrow-1">
-						<input id="ans-17" type="radio" name="question5" value="a">Raditya Dika<br>
-						<input id="ans-18" type="radio" name="question5" value="b">W.R Supratman
+						<input id="ans-17" type="radio" name="question5" value="a">Belum Merdeka<br>
+						<input id="ans-18" type="radio" name="question5" value="b" onclick="clicked5()">17 Agustus 1945
 				   </div>
 				   <div class="ansrow-2">
-						<input id="ans-19" type="radio" name="question5" value="c">W.R Suparman<br>
-						<input id="ans-20" type="radio" name="question5" value="d">W.R Superman
+						<input id="ans-19" type="radio" name="question5" value="c">01 Juni 1945<br>
+						<input id="ans-20" type="radio" name="question5" value="d">19 Agustus 1945
 				   </div>
 				</div>
 	
