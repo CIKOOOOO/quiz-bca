@@ -42,7 +42,8 @@
 					<div class="nickbox">
 						<input type="text" id="inputNickname" placeholder="masukan nickname" name="nickname" required> <br>
 					</div>
-					<button id="btn" onclick="submitClick()">Submit</button>
+					<button id="btn" onclick="submitClick()">submit</button>
+					<button id="btn_total" onclick="showTotalScore()">show total score</button>
 					<!-- <input id="btn" type="submit" value="submit"> -->
 				<!-- </form> -->
 				
