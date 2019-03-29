@@ -15,6 +15,10 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#gone{
+    display: none;
+}
+
 .container1{
     width: 360px;
     height: 600px;
