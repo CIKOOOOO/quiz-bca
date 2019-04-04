@@ -262,7 +262,7 @@ body{
     }
   }
 
-  @media screen and (min-width:480px){ 
+  @media screen and (min-width:480px) and (orientation:landscape){ 
         html{
             background-image: url("../res/portraitonly.png");
             background-repeat: repeat;
