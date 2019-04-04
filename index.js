@@ -97,7 +97,7 @@ function submitClick(){
 		});	
 	}
 	else{
-		window.alert("masukkan nickname tidak boleh kosong!")
+		window.alert("nickname tidak boleh kosong!")
 	}
 }
 
