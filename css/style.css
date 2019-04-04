@@ -269,4 +269,8 @@ body{
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        .container1{
+            visibility: hidden;
+        }
   }
