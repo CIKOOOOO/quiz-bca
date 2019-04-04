@@ -1,6 +1,3 @@
-var downloadTimer;
-var time1 = 1,time2 = 1,time3 = 1,time4 = 1,time5 = 1;
-
 function showTotalScore(){
 	var firebaseRef = firebase.database();
 	var inputNickname = document.getElementById("inputNickname").value;
@@ -117,7 +114,7 @@ function trueCond(){
 	document.getElementById("bodycontainer2").style.display = "block";
 
 	var timeleft = 25;
-	downloadTimer = setInterval(function(){
+	var downloadTimer = setInterval(function(){
 		document.getElementById("progressBar").value = 25 - timeleft;
 		timeleft -= 1;
 		if(timeleft == -2){
@@ -268,5 +265,3 @@ function pushTotalScore(score){
 		total_score : score
 	});
 }
-
-
