@@ -263,7 +263,7 @@ body{
   }
 
 
-  @media screen and (min-width: 300px){
+  @media screen and (min-width: 720px){
         html{
             background-image: url("../res/puter.png");
             background-repeat: no-repeat;
