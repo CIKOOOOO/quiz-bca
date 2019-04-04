@@ -4,20 +4,21 @@ var time1 = 1,time2 = 1,time3 = 1,time4 = 1,time5 = 1;
 function showTotalScore(){
 	var firebaseRef = firebase.database();
 	var inputNickname = document.getElementById("inputNickname").value;
+	var finalNickname = inputNickname.replace(/\s+/g, '');
 	var checkNick = firebase.database().ref("users");
 
 	loadsc();
 
 	checkNick.once("value")
 	.then(function(snapshot){
-		if(snapshot.hasChild(inputNickname)){
+		if(snapshot.hasChild(finalNickname)){
 			document.getElementById("bodycontainer1").style.display = "none";
 			document.getElementById("bodycontainer3").style.display = "block";
 			document.getElementById("bodycontainer2").style.display = "none";
-			document.getElementById("nickname").innerHTML = document.getElementById("inputNickname").value;
+			document.getElementById("nickname").innerHTML = finalNickname;
 
 			firebase.database()
-			.ref(`users/${document.getElementById("inputNickname").value}/`)
+			.ref(`users/${finalNickname}/`)
 			.once("value", snapshot => {
 
 				var quiz = {};
@@ -45,13 +46,14 @@ function showTotalScore(){
 function submitClick(){
 	var firebaseRef = firebase.database();
 	var inputNickname = document.getElementById("inputNickname").value;
+	var finalNickname = inputNickname.replace(/\s+/g, '');
 	var checkNick = firebase.database().ref("users");
-	if(inputNickname != ""){
+	if(finalNickname != ""){
 		loadsc();
 		checkNick.once("value")
 		.then(function(snapshot){
-			if(snapshot.hasChild(inputNickname)){
-				firebase.database().ref(`users/${inputNickname}/`).once("value", snapshot => {
+			if(snapshot.hasChild(finalNickname)){
+				firebase.database().ref(`users/${finalNickname}/`).once("value", snapshot => {
 					if (snapshot.child("quiz1").val() != 0 || snapshot.child("quiz2").val() != 0){
 						window.alert("Cannot enter the game");
 						removeLoad();
@@ -62,7 +64,7 @@ function submitClick(){
 				 });
 			}
 			else{
-				firebaseRef.ref('users/'+inputNickname).set({
+				firebaseRef.ref('users/'+finalNickname).set({
 					quiz1 : 0,
 					quiz2 : 0,
 					quiz3 : 0,
@@ -202,12 +204,12 @@ function getValue(){
 	}
 	else ans5 += 5;
 	
-	console.log(document.getElementById("quest1").value+" - "+document.getElementById("quest2").value+" - "+document.getElementById("quest3").value+" - "+document.getElementById("quest4").value+" - "+document.getElementById("quest5").value);
 	updateData(ans1,ans2,ans3,ans4,ans5);
-	// console.log(time1,time2,time3,time4,time5);
 }
 
 function updateData(q1, q2, q3, q4, q5) {
+	var inputNickname = document.getElementById("inputNickname").value;
+	var finalNickname = inputNickname.replace(/\s+/g, '');
 	const fb = firebase.database().ref();
 	var data = {
 		quiz1:q1,
@@ -216,18 +218,20 @@ function updateData(q1, q2, q3, q4, q5) {
 		quiz4:q4,
 		quiz5:q5
 	};
-	fb.child('users/'+document.getElementById("inputNickname").value).update(data);
+	fb.child('users/'+finalNickname).update(data);
 }
 
 function submitData(){
+	var inputNickname = document.getElementById("inputNickname").value;
+	var finalNickname = inputNickname.replace(/\s+/g, '');
 	getValue();
 	document.getElementById("bodycontainer1").style.display = "none";
 	document.getElementById("bodycontainer3").style.display = "block";
 	document.getElementById("bodycontainer2").style.display = "none";
-	document.getElementById("nickname").innerHTML = document.getElementById("inputNickname").value;
+	document.getElementById("nickname").innerHTML = finalNickname;
 
 	firebase.database()
-	.ref(`users/${document.getElementById("inputNickname").value}/`)
+	.ref(`users/${finalNickname}/`)
 	.once("value", snapshot => {
 
 		var quiz = {};
@@ -248,14 +252,18 @@ function submitData(){
 }
 
 function totalscore(score) {
+	var inputNickname = document.getElementById("inputNickname").value;
+	var finalNickname = inputNickname.replace(/\s+/g, '');
 	const fb = firebase.database().ref();
 	var data = {total_score:score};
 	pushTotalScore(score);
-	fb.child('users/'+document.getElementById("inputNickname").value).update(data);
+	fb.child('users/'+finalNickname).update(data);
 }
 
 function pushTotalScore(score){
-	var firebaseRef = firebase.database().ref('leaderboard/'+document.getElementById("inputNickname").value);
+	var inputNickname = document.getElementById("inputNickname").value;
+	var finalNickname = inputNickname.replace(/\s+/g, '');
+	var firebaseRef = firebase.database().ref('leaderboard/'+finalNickname);
 	firebaseRef.set({
 		total_score : score
 	});
