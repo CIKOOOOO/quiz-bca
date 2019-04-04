@@ -46,56 +46,59 @@ function submitClick(){
 	var firebaseRef = firebase.database();
 	var inputNickname = document.getElementById("inputNickname").value;
 	var checkNick = firebase.database().ref("users");
-
-	loadsc();
-
-	checkNick.once("value")
-	.then(function(snapshot){
-		if(snapshot.hasChild(inputNickname)){
-			firebase.database().ref(`users/${inputNickname}/`).once("value", snapshot => {
-				if (snapshot.child("quiz1").val() != 0 || snapshot.child("quiz2").val() != 0){
-					window.alert("Cannot enter the game");
-					removeLoad();
-				 }
-				 else{
-					trueCond();
-				 }
-			 });
-		}
-		else{
-			firebaseRef.ref('users/'+inputNickname).set({
-				quiz1 : 0,
-				quiz2 : 0,
-				quiz3 : 0,
-				quiz4 : 0,
-				quiz5 : 0,
-				quiz6 : 0,
-				quiz7 : 0,
-				quiz8 : 0,
-				quiz9 : 0,
-				quiz10 : 0,
-				quiz11 : 0,
-				quiz12 : 0,
-				quiz13 : 0,
-				quiz14 : 0,
-				quiz15 : 0,
-				quiz16 : 0,
-				quiz17 : 0,
-				quiz18 : 0,
-				quiz19 : 0,
-				quiz20 : 0,
-				total_score : 0
-			},function(error){
-				if(error){
-					window.alert("Error");
-					removeLoad();
-				}
-				else{
-					trueCond();
-				}
-			});
-		}
-	});	
+	if(inputNickname != ""){
+		loadsc();
+		checkNick.once("value")
+		.then(function(snapshot){
+			if(snapshot.hasChild(inputNickname)){
+				firebase.database().ref(`users/${inputNickname}/`).once("value", snapshot => {
+					if (snapshot.child("quiz1").val() != 0 || snapshot.child("quiz2").val() != 0){
+						window.alert("Cannot enter the game");
+						removeLoad();
+					 }
+					 else{
+						trueCond();
+					 }
+				 });
+			}
+			else{
+				firebaseRef.ref('users/'+inputNickname).set({
+					quiz1 : 0,
+					quiz2 : 0,
+					quiz3 : 0,
+					quiz4 : 0,
+					quiz5 : 0,
+					quiz6 : 0,
+					quiz7 : 0,
+					quiz8 : 0,
+					quiz9 : 0,
+					quiz10 : 0,
+					quiz11 : 0,
+					quiz12 : 0,
+					quiz13 : 0,
+					quiz14 : 0,
+					quiz15 : 0,
+					quiz16 : 0,
+					quiz17 : 0,
+					quiz18 : 0,
+					quiz19 : 0,
+					quiz20 : 0,
+					total_score : 0
+				},function(error){
+					if(error){
+						window.alert("Error");
+						removeLoad();
+					}
+					else{
+						trueCond();
+					}
+				});
+			}
+		});	
+	}
+	else{
+		window.alert("masukkan nickname tidak boleh kosong!")
+	}
 }
 
 function loadsc(){
