@@ -9,7 +9,7 @@ body{
 
 #bodycontainer1{
     background-image: url("../res/1.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     width: fit-content;
     height: fit-content;
     display: default;
