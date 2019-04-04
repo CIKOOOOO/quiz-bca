@@ -263,7 +263,7 @@ body{
   }
 
 
-  @media screen and (min-height: 270px) and (orientation: landscape){
+  @media screen and (min-height: 360px) and (orientation: landscape){
         html{
             background-image: url("../res/puter.png");
             background-repeat: no-repeat;
