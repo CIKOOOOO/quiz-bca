@@ -100,11 +100,11 @@ body{
 }
 
 .container2 progress{
-    position: sticky;
-    right: 20px;
     float: right;
     margin-top: -8%;
     margin-right: 20px;
+    position: sticky;
+    right: 20px;
 }
 
 .container2 .box{
