@@ -101,7 +101,7 @@ body{
 
 .progressbar{
     background-color: black;
-    width: 280px;
+    width: 100px;
     height: 50px;
     position: sticky;
     right: 20px;
