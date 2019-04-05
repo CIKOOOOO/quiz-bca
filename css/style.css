@@ -113,6 +113,8 @@ body{
 .container2 .progressbar progress{
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .container2 .box{
