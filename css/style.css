@@ -99,13 +99,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.progressbar{
-    width: 30px;
-    height: 10px;
-    background-color: black;
-}
-
-.container2 .progressbar progress{
+.container2 progress{
     float: right;
     margin-top: -8%;
     margin-right: 20px;
