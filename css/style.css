@@ -72,6 +72,7 @@ body{
     border: none;
     color: white;
     cursor: pointer;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 .container1 #btn_total{
