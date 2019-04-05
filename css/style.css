@@ -111,8 +111,8 @@ body{
 }
 
 .container2 .progressbar progress{
-    
-    
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .container2 .box{
