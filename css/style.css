@@ -100,8 +100,8 @@ body{
 }
 
 .progressbar{
-    width: fit-content;
-    height: fit-content;
+    width: 30px;
+    height: 10px;
     background-color: black;
 }
 
