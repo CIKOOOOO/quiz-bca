@@ -41,7 +41,7 @@ function showTotalScore(){
 
 function submitClick(){
 	var firebaseRef = firebase.database();
-	var inputNickname = document.getElementById("inputNickname").value;
+	var inputNickname = document.getElementById("inputNickname").value.toLowerCase();
 	var finalNickname = inputNickname.replace(/\s+/g, '');
 	var checkNick = firebase.database().ref("users");
 	document.documentElement.scrollTop = 0;
