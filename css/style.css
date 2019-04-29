@@ -103,6 +103,8 @@ body{
     float: right;
     margin-top: -8%;
     margin-right: 20px;
+    position: sticky;
+    top: 10px;
 }
 
 .container2 .box{
@@ -183,10 +185,6 @@ body{
     margin-bottom: 0px;
     margin-top: 0px;
     padding-top: 28px;
-}
-
-#nickname{
-    font-family: 'jokerman';
 }
 
 .container3 h1{
