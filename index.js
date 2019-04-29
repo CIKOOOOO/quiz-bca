@@ -46,7 +46,7 @@ function submitClick(){
 	var checkNick = firebase.database().ref("users");
 	document.documentElement.scrollTop = 0;
 
-	alert(finalNickname);
+	window.alert(finalNickname);
 
 	if(finalNickname != ""){
 		loadsc();
