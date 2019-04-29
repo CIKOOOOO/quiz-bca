@@ -90,7 +90,7 @@
 		
 					<div class="ansrow-1">
 						<input id="ans-9" type="radio" name="question3" value="a">Jengkol<br>
-						<input id="ans-10" type="radio" name="question3" value="b" onclick="clicked3()">Kembang
+						<input id="ans-10" type="radio" name="question3" value="b" onclick="clicked3()">Cengkeh
 				   </div>
 				   <div class="ansrow-2">
 						<input id="ans-11" type="radio" name="question3" value="c">Gandum<br>
