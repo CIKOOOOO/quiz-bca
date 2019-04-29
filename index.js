@@ -1,5 +1,4 @@
 function showTotalScore(){
-	var firebaseRef = firebase.database();
 	var inputNickname = document.getElementById("inputNickname").value;
 	var finalNickname = inputNickname.replace(/\s+/g, '');
 	var checkNick = firebase.database().ref("users");
