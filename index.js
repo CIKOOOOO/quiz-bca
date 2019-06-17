@@ -42,7 +42,7 @@ function showTotalScore(){
 				}
 
 				nickname = snapshot.child("nickname").val();
-				console.log(nickname);
+				// console.log(nickname);
 				document.getElementById("nickname").innerHTML = nickname;
 				document.getElementById("score").innerHTML = total_point;
 			});
