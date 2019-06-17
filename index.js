@@ -1,15 +1,15 @@
 var arr = [];
 var checkId = firebase.database().ref("users");
 
-// checkId.once("value")
-// .then(function(snapshot){
-// 	snapshot.forEach(function(childSnapshot){
-// 		var id = childSnapshot.key;
-// 		arr.push(id);
-// 		// console.log(arr);
+checkId.once("value")
+.then(function(snapshot){
+	snapshot.forEach(function(childSnapshot){
+		var id = childSnapshot.key;
+		arr.push(id);
+		// console.log(arr);
 				
-// 	})
-// });
+	})
+});
 
 function showTotalScore(){
 	var finalNickname = document.getElementById("inputNickname").value.toLowerCase();
@@ -140,7 +140,7 @@ function trueCond(){
 		document.getElementById("progressBar").value = 25 - timeleft;
 		timeleft -= 1;
 		if(timeleft == -2){
-			submitData();
+			// submitData();
 			clearInterval(downloadTimer);
 		}
 	}, 1000);

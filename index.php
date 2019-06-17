@@ -57,21 +57,21 @@
 		<div class="container2">
 				<progress value="0" max="25" id="progressBar"></progress>
 			<div class="box">
-				<img src="res/bca.png" width="100px" height="100px" alt="qimg">
-				<div class="question">Siapa presiden pertama Indonesia?</div> 
+				<!-- <img src="res/bca.png" width="100px" height="100px" alt="qimg"> -->
+				<div class="question">Siapa pendiri BCA?</div> 
 	
 				<div class="ansrow-1">
-					 <input id="ans-1" type="radio" name="question1" value="a">  Ir. Raditya Dika <br>
-					 <input id="ans-2" type="radio" name="question1" value="b" onclick="clicked1()">  Ir. Soekarno
+					 <input id="ans-1" type="radio" name="question1" value="a">  Ferry Unardi <br>
+					 <input id="ans-2" type="radio" name="question1" value="b" onclick="clicked1()">  Sudono Salim
 				</div>
 				<div class="ansrow-2">
-					 <input id="ans-3" type="radio" name="question1" value="c">  Bpk Soeharto <br>
-					 <input id="ans-4" type="radio" name="question1" value="d">  Tidak ada
+					 <input id="ans-3" type="radio" name="question1" value="c">  Pemerintah Indonesia <br>
+					 <input id="ans-4" type="radio" name="question1" value="d">  Leontinus Alpha Edison
 				</div>
 			</div>
 	
 			<div class="box">
-					<img src="res/wheel1.png" width="100px" height="100px" alt="qimg">
+					<!-- <img src="res/wheel1.png" width="100px" height="100px" alt="qimg"> -->
 					<div class="question">Apa Singkatan BCA?</div> 
 		
 					<div class="ansrow-1">
@@ -85,7 +85,7 @@
 				</div>
 
 				<div class="box">
-					<img src="res/wheel1.png" width="100px" height="100px" alt="qimg">
+					<!-- <img src="res/wheel1.png" width="100px" height="100px" alt="qimg"> -->
 					<div class="question">Apa Bentuk Logo BCA?</div> 
 		
 					<div class="ansrow-1">
@@ -99,7 +99,7 @@
 				</div>
 
 				<div class="box">
-					<img src="res/wheel1.png" width="100px" height="100px" alt="qimg">
+					<!-- <img src="res/wheel1.png" width="100px" height="100px" alt="qimg"> -->
 					<div class="question">Warna logo Go-Jek</div> 
 		
 					<div class="ansrow-1">
@@ -113,7 +113,7 @@
 				</div>
 
 				<div class="box">
-					<img src="res/wheel1.png" width="100px" height="100px" alt="qimg">
+					<!-- <img src="res/wheel1.png" width="100px" height="100px" alt="qimg"> -->
 					<div class="question">Kapan Indonesia merdeka?</div> 
 		
 					<div class="ansrow-1">
