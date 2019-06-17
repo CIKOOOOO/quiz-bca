@@ -61,68 +61,88 @@
 				<div class="question">Siapa pendiri BCA?</div> 
 	
 				<div class="ansrow-1">
-					 <input id="ans-1" type="radio" name="question1" value="a">  Ferry Unardi <br>
-					 <input id="ans-2" type="radio" name="question1" value="b" onclick="clicked1()">  Sudono Salim
+					 <input id="ans-1" type="radio" name="question1" value="a">
+					 <label for="ans-1">Leontinus Alpha Edison </label> <br>
+					<input id="ans-2" type="radio" name="question1" value="b" onclick="clicked1()">  
+					<label for="ans-2">Sudono Salim</label>
 				</div>
 				<div class="ansrow-2">
-					 <input id="ans-3" type="radio" name="question1" value="c">  Pemerintah Indonesia <br>
-					 <input id="ans-4" type="radio" name="question1" value="d">  Leontinus Alpha Edison
+					 <input id="ans-3" type="radio" name="question1" value="c">
+					 <label for="ans-3">Pemerintah Indonesia</label> <br>
+					 <input id="ans-4" type="radio" name="question1" value="d">
+					 <label for="ans-4">Ferry Unardi</label> <br>
 				</div>
 			</div>
 	
 			<div class="box">
 					<!-- <img src="res/wheel1.png" width="100px" height="100px" alt="qimg"> -->
-					<div class="question">Apa Singkatan BCA?</div> 
+					<div class="question">Kapan aplikasi Go-Jek diluncurkan?</div> 
 		
 					<div class="ansrow-1">
-						<input id="ans-5" type="radio" name="question2" value="a">Bank Central Australia<br>
-						<input id="ans-6" type="radio" name="question2" value="b">Bunga Cinta Aestari
+						<input id="ans-5" type="radio" name="question2" value="a">
+						<label for="ans-5">2020</label> <br>
+						<input id="ans-6" type="radio" name="question2" value="b">
+						<label for="ans-6">2019</label>
 				   </div>
 				   <div class="ansrow-2">
-						<input id="ans-7" type="radio" name="question2" value="c" onclick="clicked2()">Bank Central Asia<br>
-						<input id="ans-8" type="radio" name="question2" value="d">Bank Central Asian
+						<input id="ans-7" type="radio" name="question2" value="c" onclick="clicked2()">
+						<label for="ans-7">2015</label> <br>
+						<input id="ans-8" type="radio" name="question2" value="d">
+						<label for="ans-8">2014</label>
 				   </div>
 				</div>
 
 				<div class="box">
 					<!-- <img src="res/wheel1.png" width="100px" height="100px" alt="qimg"> -->
-					<div class="question">Apa Bentuk Logo BCA?</div> 
+					<div class="question">Siapakah nama Presiden Direktur BCA?</div> 
 		
 					<div class="ansrow-1">
-						<input id="ans-9" type="radio" name="question3" value="a">Jengkol<br>
-						<input id="ans-10" type="radio" name="question3" value="b" onclick="clicked3()">Cengkeh
+						<input id="ans-9" type="radio" name="question3" value="a">
+						<label for="ans-9">Jahja Setiamaja</label> <br>
+						<input id="ans-10" type="radio" name="question3" value="b" onclick="clicked3()">
+						<label for="ans-10">Jahja Setiaatmadja</label>
 				   </div>
 				   <div class="ansrow-2">
-						<input id="ans-11" type="radio" name="question3" value="c">Gandum<br>
-						<input id="ans-12" type="radio" name="question3" value="d">Mobil
+						<input id="ans-11" type="radio" name="question3" value="c">
+						<label for="ans-11">Jahya Setiaatmaja</label> <br>
+						<input id="ans-12" type="radio" name="question3" value="d">
+						<label for="ans-12">Yahya Setiaatmaja</label>
 				   </div>
 				</div>
 
 				<div class="box">
 					<!-- <img src="res/wheel1.png" width="100px" height="100px" alt="qimg"> -->
-					<div class="question">Warna logo Go-Jek</div> 
+					<div class="question">Siapa pendiri dan penemu Go-Jek?</div> 
 		
 					<div class="ansrow-1">
-						<input id="ans-13" type="radio" name="question4" value="a" onclick="clicked4()">Hijau<br>
-						<input id="ans-14" type="radio" name="question4" value="b">Ungu
+						<input id="ans-13" type="radio" name="question4" value="a" onclick="clicked4()">
+						<label for="ans-13">Nadiem Makarim</label> <br>
+						<input id="ans-14" type="radio" name="question4" value="b">
+						<label for="ans-14">Andrew Darwis</label>
 				   </div>
 				   <div class="ansrow-2">
-						<input id="ans-15" type="radio" name="question4" value="c">Kelabu<br>
-						<input id="ans-16" type="radio" name="question4" value="d">Tidak berwarna
+						<input id="ans-15" type="radio" name="question4" value="c">
+						<label for="ans-15">Achmad Zaky</label> <br>
+						<input id="ans-16" type="radio" name="question4" value="d">
+						<label for="ans-16">William Tanuwijaya</label>
 				   </div>
 				</div>
 
 				<div class="box">
 					<!-- <img src="res/wheel1.png" width="100px" height="100px" alt="qimg"> -->
-					<div class="question">Kapan Indonesia merdeka?</div> 
+					<div class="question">Berapa digit angka PIN yang digunakan untuk tabungan BCA?</div> 
 		
 					<div class="ansrow-1">
-						<input id="ans-17" type="radio" name="question5" value="a">Belum Merdeka<br>
-						<input id="ans-18" type="radio" name="question5" value="b" onclick="clicked5()">17 Agustus 1945
+						<input id="ans-17" type="radio" name="question5" value="a">
+						<label for="ans-17">5</label> <br>
+						<input id="ans-18" type="radio" name="question5" value="b" onclick="clicked5()">
+						<label for="ans-18">6</label>
 				   </div>
 				   <div class="ansrow-2">
-						<input id="ans-19" type="radio" name="question5" value="c">01 Juni 1945<br>
-						<input id="ans-20" type="radio" name="question5" value="d">19 Agustus 1945
+						<input id="ans-19" type="radio" name="question5" value="c">
+						<label for="ans-19">7</label> <br>
+						<input id="ans-20" type="radio" name="question5" value="d">
+						<label for="ans-20">8</label>
 				   </div>
 				</div>
 	
