@@ -175,7 +175,7 @@ function getValue(){
 	}
 	else ans5 += WRONG_SCORE;
 	
-	console.log(ans3 + " - " + prog3);
+	console.log(ans4 + " - " + prog4);
 	// updateData(ans1,ans2,ans3,ans4,ans5);
 }
 
