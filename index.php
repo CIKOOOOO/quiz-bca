@@ -57,7 +57,6 @@
 		<div class="container2">
 				<progress value="0" max="25" id="progressBar"></progress>
 			<div class="box">
-				<!-- <img src="res/bca.png" width="100px" height="100px" alt="qimg"> -->
 				<div class="question">Siapa pendiri BCA?</div> 
 	
 				<div class="ansrow-1">
@@ -75,7 +74,6 @@
 			</div>
 	
 			<div class="box">
-					<!-- <img src="res/wheel1.png" width="100px" height="100px" alt="qimg"> -->
 					<div class="question">Kapan aplikasi Go-Jek diluncurkan?</div> 
 		
 					<div class="ansrow-1">
@@ -93,7 +91,6 @@
 				</div>
 
 				<div class="box">
-					<!-- <img src="res/wheel1.png" width="100px" height="100px" alt="qimg"> -->
 					<div class="question">Siapakah nama Presiden Direktur BCA?</div> 
 		
 					<div class="ansrow-1">
@@ -111,7 +108,6 @@
 				</div>
 
 				<div class="box">
-					<!-- <img src="res/wheel1.png" width="100px" height="100px" alt="qimg"> -->
 					<div class="question">Siapa pendiri dan penemu Go-Jek?</div> 
 		
 					<div class="ansrow-1">
@@ -129,7 +125,6 @@
 				</div>
 
 				<div class="box">
-					<!-- <img src="res/wheel1.png" width="100px" height="100px" alt="qimg"> -->
 					<div class="question">Berapa digit angka PIN yang digunakan untuk tabungan BCA?</div> 
 		
 					<div class="ansrow-1">

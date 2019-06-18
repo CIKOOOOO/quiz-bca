@@ -100,9 +100,10 @@ function trueCond(){
 		document.getElementById("progressBar").value = MAX_PROGRESS_TIME - timeleft;
 		timeleft -= 1;
 		if(timeleft == -2){
-			// submitData();
+			submitData();
 			clearInterval(downloadTimer);
 		}
+		console.log(timeleft);
 	}, 1000);
 }
 
@@ -174,7 +175,8 @@ function getValue(){
 	}
 	else ans5 += WRONG_SCORE;
 	
-	updateData(ans1,ans2,ans3,ans4,ans5);
+	console.log(ans1 + " - " + prog1);
+	// updateData(ans1,ans2,ans3,ans4,ans5);
 }
 
 function updateData(q1, q2, q3, q4, q5) {
