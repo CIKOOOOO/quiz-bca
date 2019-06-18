@@ -100,7 +100,7 @@ function trueCond(){
 		document.getElementById("progressBar").value = MAX_PROGRESS_TIME - timeleft;
 		timeleft -= 1;
 		if(timeleft == -2){
-			submitData();
+			// submitData();
 			clearInterval(downloadTimer);
 		}
 	}, 1000);
