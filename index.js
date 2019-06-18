@@ -99,7 +99,6 @@ function trueCond(){
 	var downloadTimer = setInterval(function(){
 		document.getElementById("progressBar").value = MAX_PROGRESS_TIME - timeleft;
 		timeleft -= 1;
-		console.log(timeleft);
 		if(timeleft == -2){
 			submitData();
 			clearInterval(downloadTimer);
@@ -175,8 +174,7 @@ function getValue(){
 	}
 	else ans5 += WRONG_SCORE;
 	
-	console.log(ans5 + " - " + prog5);
-	// updateData(ans1,ans2,ans3,ans4,ans5);
+	updateData(ans1,ans2,ans3,ans4,ans5);
 }
 
 function updateData(q1, q2, q3, q4, q5) {
