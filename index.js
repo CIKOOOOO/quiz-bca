@@ -41,7 +41,7 @@ function showTotalScore(){
 
 				for (let index = 1; index <= TOTAL_QUIZ; index++) {
 					if(quiz[index]=='5')
-						document.getElementById("p"+index).innerHTML = quiz[index]+" <b style='text-color:red'>(X)</b>";
+						document.getElementById("p"+index).innerHTML = quiz[index]+" <b style='font-color:red'>(X)</b>";
 					else 
 						document.getElementById("p"+index).innerHTML = quiz[index];
 			
