@@ -219,8 +219,9 @@ body{
 
 /* score */
 #bodycontainer3{
-    background-image: url("../res/background.png");
-    background-repeat: no-repeat;
+    background-color: url("../res/background.png");
+    background-repeat: round;
+    background-size: contain;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
     display: none;
