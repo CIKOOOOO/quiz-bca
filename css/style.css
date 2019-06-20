@@ -37,8 +37,8 @@ body{
 }
 
 .container1 h1{
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     color: white;
     font-size: 60px;
 }
@@ -48,6 +48,7 @@ body{
     height: 60px;
     background: ghostwhite;
     border-radius: 8px;
+    margin-top: 90px;
     margin: auto;
 }
 
