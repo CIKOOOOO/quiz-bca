@@ -37,18 +37,14 @@
 	<!-- screen1 -->
 	<div id="bodycontainer1">
 		<div class="container1">
+		  	<img src="" alt="">
 			<h1>Quiz BCA</h1>
-				<!-- <form method="POST" action="main_quiz1.php" onsubmit="return submitClick();">	 -->
-					<div class="nickbox">
-						<input type="text" id="inputNickname" placeholder="masukan ID anda" name="nickname" required> <br>
-					</div>
-					<button id="btn" onclick="submitClick()">submit</button>
-					<button id="btn_total" onclick="showTotalScore()">show total score</button>
-					<!-- <input id="btn" type="submit" value="submit"> -->
-				<!-- </form> -->
-				
+			<div class="nickbox">
+				<input type="text" id="inputNickname" placeholder="masukan ID anda" name="nickname" required> <br>
+			</div>
+			<button id="btn" onclick="submitClick()">submit</button>
+			<button id="btn_total" onclick="showTotalScore()">show total score</button>
 		</div>
-
 		<div id="lds-ring"><div></div><div></div><div></div><div></div></div>
 	</div>
 	
