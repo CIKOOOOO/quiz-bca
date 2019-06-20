@@ -37,8 +37,8 @@
 	<!-- screen1 -->
 	<div id="bodycontainer1">
 		<div class="container1">
-		  	<img src="res/logo.png" alt="BCA Logo" width="100px" height="100px">
 			<h1>Quiz BCA</h1>
+		  	<img src="res/logo.png" alt="BCA Logo" width="100px" height="100px">
 			<div class="nickbox">
 				<input type="text" id="inputNickname" placeholder="masukan ID anda" name="nickname" required> <br>
 			</div>
